@@ -1,5 +1,8 @@
 {
   "image": "ghcr.io/tianocore/containers/fedora-35-dev:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
   "postCreateCommand": "git config --global --add safe.directory * && pip install --upgrade -r pip-requirements.txt",
   "customizations": {
     "vscode": {
