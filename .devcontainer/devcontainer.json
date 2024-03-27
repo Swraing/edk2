@@ -1,12 +1,5 @@
 {
   "image": "ghcr.io/tianocore/containers/fedora-39-dev:latest",
-  "features": {
-    "desktop-lite": {
-        "password": "vscode",
-        "webPort": "6080",
-        "vncPort": "5901"
-    }
-  },
   "postCreateCommand": "git config --global --add safe.directory * && pip install --upgrade -r pip-requirements.txt",
   "customizations": {
     "vscode": {
